@@ -13,9 +13,9 @@
 - [ ] Add dealer testimonial section
 
 ## This Month
-- [ ] Build FAQ page
+- [x] Build FAQ page
 - [ ] Create blog with 4 posts
-- [ ] Set up automated deployment via Git
+- [x] Set up automated deployment via Git
 
 ## Backlog
 - [ ] Territory checker tool
