@@ -4,6 +4,7 @@
 - [x] Recover or replace missing images (logo + 5 slider photos)
 - [x] Redeploy with images restored
 - [x] Connect GitHub repository for auto-deployment
+- [x] Add Dealer FAQ page
 - [ ] Add Google Analytics 4 tracking ID
 
 ## This Week
