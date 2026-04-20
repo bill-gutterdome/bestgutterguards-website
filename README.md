@@ -24,9 +24,15 @@ docs/          # SEO strategy, content calendar
 - **Platform:** Vercel
 - **Project:** bill-gutterdomes-projects/landing-page
 - **Domain:** bestgutterguards.net (custom)
+- **GitHub:** https://github.com/bill-gutterdome/bestgutterguards-website
+- **Auto-deploy:** Enabled (pushes to GitHub auto-deploy to production)
 
 ## Recent Changes
+- 2026-04-20: Connected GitHub repository for auto-deployment
+- 2026-04-20: Recovered and deployed all images (logo + 5 slides)
 - 2026-04-20: Added SEO meta tags, Schema markup, sitemap.xml
+- 2026-04-20: Created GitHub repository (public)
+- 2026-04-20: Built safe deployment script with file checks
 
 ## Notes
 - Images temporarily removed (recovery in progress)
