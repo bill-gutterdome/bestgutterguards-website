@@ -10,6 +10,64 @@
     <meta name="keywords" content="gutter guard dealer FAQ, GutterDome dealer questions, gutter protection franchise FAQ">
     <link rel="canonical" href="https://bestgutterguards.net/faq.html">
     
+    <!-- FAQPage Schema for AI Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does it cost to become a dealer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No licensing fees or franchise costs. You simply purchase product at wholesale pricing. We believe in earning your business through great products and support, not extracting fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I get exclusive territory rights?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All active dealers receive semi-exclusive protected territory in their Designated Market Area (DMA). We don't compete against our own dealers—your success is our success."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast can I get product delivered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We guarantee shipment within 2 business days or it's free. No more waiting 2-6 weeks for backorders. Your customers and employees depend on timely delivery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide leads or do I find my own customers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both. All corporate-generated consumer leads in your territory are emailed to you free of charge. You can also generate your own leads—we support your existing marketing efforts with 5% co-op advertising dollars."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need gutter installation experience?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Experience helps but isn't required. We provide professional installation training, technical support, and all the sales tools you need. Many successful dealers came from roofing, siding, or general contracting backgrounds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the profit potential?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most dealers add $50,000+ annually with minimal overhead. We offer highly competitive tiered pricing with volume discounts and truckload pricing for larger operations. Plus quarterly promotions to boost your margins."
+          }
+        }
+      ]
+    }
+    </script>
+    
     <!-- Open Graph -->
     <meta property="og:title" content="Dealer FAQ | Best Gutter Guards - GutterDome">
     <meta property="og:description" content="Answers to common questions about becoming a GutterDome dealer.">
@@ -45,8 +103,12 @@
         footer { background: #1a1a1a; color: white; padding: 2rem 0; text-align: center; margin-top: 4rem; }
         .footer-links { display: flex; justify-content: center; gap: 2rem; list-style: none; margin-top: 1rem; }
         .footer-links a { color: white; text-decoration: none; opacity: 0.8; }
+        .mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+        .nav-links.active { display: flex; flex-direction: column; position: absolute; top: 60px; right: 0; background: var(--gd-navy); padding: 1rem 2rem; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
         @media (max-width: 768px) {
             .nav-links { display: none; }
+            .nav-links.active { display: flex; }
+            .mobile-menu-btn { display: block; }
             .hero h1 { font-size: 2rem; }
         }
     </style>
@@ -59,7 +121,8 @@
                     <img src="gutterdome-logo.png" alt="GutterDome">
                     <span class="logo-text">BEST GUTTER GUARDS</span>
                 </a>
-                <ul class="nav-links">
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav-links" id="navLinks">
                     <li><a href="/">Home</a></li>
                     <li><a href="/#benefits">Benefits</a></li>
                     <li><a href="/#apply">Apply</a></li>
@@ -132,5 +195,10 @@
             </ul>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

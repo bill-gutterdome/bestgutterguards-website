@@ -128,9 +128,13 @@
         .footer-links a { color: white; text-decoration: none; opacity: 0.8; transition: opacity 0.3s; }
         .footer-links a:hover { opacity: 1; }
         .footer-phone { font-size: 1.25rem; font-weight: bold; color: var(--gd-orange); margin-top: 1rem; }
+        .mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+        .nav-links.active { display: flex; flex-direction: column; position: absolute; top: 60px; right: 0; background: var(--gd-navy); padding: 1rem 2rem; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
             .nav-links { display: none; }
+            .nav-links.active { display: flex; }
+            .mobile-menu-btn { display: block; }
             .logo-text { font-size: 1.2rem; }
             .product-grid { grid-template-columns: 1fr; }
         }
@@ -156,7 +160,8 @@
                         <div class="logo-sub">A GutterDome Partner Program</div>
                     </div>
                 </a>
-                <ul class="nav-links">
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav-links" id="navLinks">
                     <li><a href="#benefits">Benefits</a></li>
                     <li><a href="#products">Products</a></li>
                     <li><a href="faq.html">FAQ</a></li>
@@ -220,7 +225,7 @@
             <h2>Become a GutterDome Dealer</h2>
             <p class="form-subtitle">Fill out the form below, email <a href="mailto:sales@gutterdome.com" style="color: var(--gd-orange);">sales@gutterdome.com</a>, or call us at <strong>877-987-4888</strong> with any questions.</p>
             <div class="form-container">
-                <form action="mailto:sales@gutterdome.com" method="post" enctype="text/plain">
+                <form action="https://formspree.io/f/xnqevwrb" method="POST">
                     <div class="form-group">
                         <label for="company">Company Name *</label>
                         <input type="text" id="company" name="company" required="">
@@ -323,7 +328,7 @@
                 <li><a href="terms-of-use.html">Terms of Use</a></li>
             </ul>
             <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.6;">
-                © 2024 Best Gutter Guards. All rights reserved.<br>
+                © 2026 Best Gutter Guards. All rights reserved.<br>
                 United States Patents: #8,495,837 #8,677,695 &amp; #8,756,868
             </p>
         </div>
@@ -339,6 +344,9 @@
             currentSlide = index;
         }
         setInterval(() => showSlide((currentSlide + 1) % slides.length), 5000);
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
     </script>
 
 </body>
