@@ -5,6 +5,10 @@
 - [x] Redeploy with images restored
 - [x] Connect GitHub repository for auto-deployment
 - [x] Add Dealer FAQ page
+- [x] Fix form submission (Formspree)
+- [x] Add FAQPage schema for AI search
+- [x] Fix mobile navigation
+- [x] Update copyright to 2026
 - [ ] Add Google Analytics 4 tracking ID
 
 ## This Week
