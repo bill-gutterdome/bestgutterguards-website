@@ -9,6 +9,8 @@
 - [x] Add FAQPage schema for AI search
 - [x] Fix mobile navigation
 - [x] Update copyright to 2026
+- [x] Add thank-you page
+- [x] Add lead attribution tracking
 - [ ] Add Google Analytics 4 tracking ID
 
 ## This Week
